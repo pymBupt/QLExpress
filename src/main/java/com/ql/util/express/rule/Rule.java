@@ -8,7 +8,6 @@ import java.util.List;
  */
 public class Rule extends Node {
 
-
     private String code;
     private String name;
 

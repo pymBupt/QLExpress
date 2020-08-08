@@ -45,7 +45,6 @@ public class InstructionNewVirClass extends Instruction {
             log.debug(str);
         }
 
-
         //因为会影响堆栈，要先把对象拷贝出来
         OperateData[] list = new OperateData[parameters.length];
         for (int i = 0; i < list.length; i++) {
@@ -63,5 +62,4 @@ public class InstructionNewVirClass extends Instruction {
         return "new VClass[" + this.className + "] OPNUMBER["
                 + this.opDataNumber + "]";
     }
-
 }

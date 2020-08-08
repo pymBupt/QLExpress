@@ -49,7 +49,6 @@ public class InstructionSetContext implements IExpressContext<String, Object> {
         isSupportDynamicFieldName = false;
         runner = null;
         symbolTable.clear();
-
     }
 
     public void exportSymbol(String varName, Object aliasNameObject) throws Exception {
@@ -144,5 +143,4 @@ public class InstructionSetContext implements IExpressContext<String, Object> {
             throw new RuntimeException("没有定义局部变量：" + key + ",而且没有全局上下文");
         }
     }
-
 }

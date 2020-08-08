@@ -7,7 +7,6 @@ import com.ql.util.express.match.INodeType;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ExpressNode implements IDataNode {
     /**
      * 节点类型
@@ -236,7 +235,6 @@ public class ExpressNode implements IDataNode {
 
     public void setNodeType(INodeType type) {
         this.setNodeType((NodeType) type);
-
     }
 
     @Override

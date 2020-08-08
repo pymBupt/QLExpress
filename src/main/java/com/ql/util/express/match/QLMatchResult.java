@@ -7,7 +7,6 @@ public class QLMatchResult {
     private List<QLMatchResultTree> matchs = new ArrayList<QLMatchResultTree>();
     private int matchLastIndex;
 
-
     public void clear() {
         this.matchLastIndex = 0;
         this.matchs.clear();

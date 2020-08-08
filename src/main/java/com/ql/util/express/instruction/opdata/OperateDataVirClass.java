@@ -10,7 +10,6 @@ import org.apache.commons.logging.Log;
 
 import java.util.List;
 
-
 /**
  * 虚拟Class的内存对象
  *

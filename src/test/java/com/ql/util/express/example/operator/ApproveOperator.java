@@ -20,5 +20,4 @@ public class ApproveOperator extends Operator {
             System.out.println("重填:申请人:" + list[0]);
         return true;
     }
-
 }

@@ -21,6 +21,4 @@ public class OperatorPrintln extends Operator {
         System.out.println(list[0]);
         return null;
     }
-
-
 }

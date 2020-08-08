@@ -1,6 +1,5 @@
 package com.ql.util.express.match;
 
-
 /**
  * 匹配类型
  *

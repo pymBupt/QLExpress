@@ -29,11 +29,9 @@ public class StaticMethodTest {
 
         public static long ITEM_DIM_VIRTUAL = 0x02;
 
-
         public static boolean isVirtualSCItem(
                 Long itemDim) {
             return itemDim != null && (itemDim & 0x0f) == ITEM_DIM_VIRTUAL;
         }
     }
-
 }

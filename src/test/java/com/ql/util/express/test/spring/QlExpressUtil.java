@@ -50,7 +50,6 @@ public class QlExpressUtil implements ApplicationContextAware {
             try {
                 runner.addFunctionOfServiceMethod("读取用户信息", applicationContext.getBean("bizLogicBean"), "getUserInfo", new Class[]{String.class}, null);
                 runner.addMacro("判定用户是否vip", "userDO.salary>200000");
-
             } catch (Exception e) {
                 throw new RuntimeException("初始化失败表达式", e);
             }
@@ -62,5 +61,4 @@ public class QlExpressUtil implements ApplicationContextAware {
             throws BeansException {
         applicationContext = aContext;
     }
-
 }

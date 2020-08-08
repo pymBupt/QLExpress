@@ -8,7 +8,6 @@ import org.junit.Test;
 
 public class TestStackOverFlowTest {
 
-
     @Test
     public void test() throws Exception {
 
@@ -39,7 +38,5 @@ public class TestStackOverFlowTest {
             System.out.println(express + " = " + result2);
             QLPattern.printStackDepth = false;
         }
-
     }
-
 }

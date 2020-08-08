@@ -6,7 +6,6 @@ import com.ql.util.express.instruction.op.OperatorEqualsLessMore;
  * Created by tianqiao on 18/4/3.
  */
 
-
 public class NullableOperatorEqualsLessMore extends OperatorEqualsLessMore {
 
     public NullableOperatorEqualsLessMore(String aName) {
@@ -29,7 +28,5 @@ public class NullableOperatorEqualsLessMore extends OperatorEqualsLessMore {
         }
         return OperatorEqualsLessMore.executeInner(opStr, obj1, obj2);
     }
-
-
 }
     

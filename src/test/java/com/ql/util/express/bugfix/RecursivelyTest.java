@@ -27,7 +27,6 @@ public class RecursivelyTest {
             }
         };
 
-
         runner.addFunction("r_exeAll", exeOperator);
         runnerInner.addFunction("r_exeAll", exeOperator);
     }

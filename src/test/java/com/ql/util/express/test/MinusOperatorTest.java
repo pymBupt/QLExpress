@@ -18,7 +18,6 @@ public class MinusOperatorTest {
         System.out.println(runner.execute(test1, context, null, true, false));
     }
 
-
     @Test
     public void operatorThreeLogic() throws Exception {
         ExpressRunner runner = new ExpressRunner(false, true);
@@ -26,5 +25,4 @@ public class MinusOperatorTest {
         String test1 = "2>-1?-1:-2;";
         System.out.println(runner.execute(test1, context, null, true, false));
     }
-
 }

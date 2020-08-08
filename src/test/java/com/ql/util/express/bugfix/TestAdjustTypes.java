@@ -11,7 +11,6 @@ import org.junit.Test;
  */
 public class TestAdjustTypes {
 
-
     public static TestAdjustTypes instance = new TestAdjustTypes();
 
     public Integer test(Integer a) {
@@ -41,7 +40,6 @@ public class TestAdjustTypes {
         System.out.println(result);
     }
 
-
     @Test
     public void testDemo2() throws Exception {
         ExpressRunner runner = new ExpressRunner();
@@ -61,5 +59,4 @@ public class TestAdjustTypes {
         Object result = runner.execute(exp, context, null, false, true);
         System.out.println(result);
     }
-
 }

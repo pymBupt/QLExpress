@@ -5,7 +5,6 @@ import com.ql.util.express.ExpressRunner;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class ForFlowFunctionTest {
 
     @Test
@@ -19,5 +18,4 @@ public class ForFlowFunctionTest {
         Object r = runner.execute(express, context, null, false, true);
         Assert.assertTrue("for循环后面跟着一个函数的时候错误", r.toString().equals("10"));
     }
-
 }

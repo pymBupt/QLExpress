@@ -178,7 +178,6 @@ public class ConsoleFrame
         } catch (Exception e) {
             e.printStackTrace(new PrintWriter(writer));
         }
-
     }
 }
 
@@ -228,7 +227,6 @@ class StringBufferOutputStream extends OutputStream {
     public void write(int ch)
             throws IOException {
         this.buffer.write(ch);
-
     }
 
     public void flush() throws IOException {

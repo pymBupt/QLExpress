@@ -26,7 +26,6 @@ public class ThrowExceptionTest {
         System.out.println(result);
     }
 
-
     @Test
     public void testQLCompileException() throws Exception {
 
@@ -94,7 +93,6 @@ public class ThrowExceptionTest {
                 keywords = "java.lang.reflect.InvocationTargetException";//反射调用的异常，无法避免
                 exceptionString = e.getCause().toString();
                 Assert.assertTrue(exceptionString.contains(keywords));
-
 
                 keywords = "java.lang.NumberFormatException";
                 exceptionString = e.getCause().getCause().toString();

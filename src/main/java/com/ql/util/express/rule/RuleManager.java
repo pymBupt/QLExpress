@@ -63,7 +63,6 @@ public class RuleManager {
             }
         }
 
-
         Boolean unionLogicResult = null;
         ConditionType rootType = root.getType();
         if (root.getChildren() != null) {
@@ -219,7 +218,6 @@ public class RuleManager {
                 condition.addChild(subCondition);
                 transferCondition(child, subCondition, words);
             }
-
         } else if (isNodeType(express, "||")) {
             condition.setType(ConditionType.Or);
             condition.setText("or");
@@ -237,14 +235,12 @@ public class RuleManager {
             } else {
                 condition.setType(ConditionType.Leaf);
                 condition.setText(makeCondtionString(express, words));
-
             }
         }
     }
 
     private static boolean isNodeType(ExpressNode node, String type) {
         return node.getNodeType().getName().equals(type);
-
     }
 
     private static String makeActionString(ExpressNode express, Word[] words) {
@@ -341,11 +337,9 @@ public class RuleManager {
         return wordIndex;
     }
 
-
     public static Condition createCondition(ExpressNode condition, Word[] words) {
         Condition ruleCondition = new Condition();
         transferCondition(condition, ruleCondition, words);
         return ruleCondition;
     }
-
 }

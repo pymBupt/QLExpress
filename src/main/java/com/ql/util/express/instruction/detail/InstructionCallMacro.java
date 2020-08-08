@@ -5,7 +5,6 @@ import com.ql.util.express.instruction.OperateDataCacheManager;
 
 import java.util.List;
 
-
 public class InstructionCallMacro extends Instruction {
     private static final long serialVersionUID = -5760553701305043649L;
     String name;

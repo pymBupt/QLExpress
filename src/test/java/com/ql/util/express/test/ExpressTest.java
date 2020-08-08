@@ -111,7 +111,6 @@ public class ExpressTest {
         expressContext.put("abc", 1l);
         expressContext.put("defVar", 1000);
 
-
         for (int point = 0; point < expressTest.length; point++) {
             String expressStr = expressTest[point][0];
             List<String> errorList = new ArrayList<String>();

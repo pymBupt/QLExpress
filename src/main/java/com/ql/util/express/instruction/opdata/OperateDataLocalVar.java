@@ -2,7 +2,6 @@ package com.ql.util.express.instruction.opdata;
 
 import com.ql.util.express.InstructionSetContext;
 
-
 public class OperateDataLocalVar extends OperateDataAttr {
     public OperateDataLocalVar(String name, Class<?> type) {
         super(name, type);

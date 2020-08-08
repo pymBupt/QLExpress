@@ -4,7 +4,6 @@ import com.ql.util.express.RunEnvironment;
 
 import java.util.List;
 
-
 public class InstructionClearDataStack extends Instruction {
     private static final long serialVersionUID = 6286430548739444891L;
 

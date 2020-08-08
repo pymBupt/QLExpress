@@ -10,12 +10,9 @@ import java.util.List;
  * ExpressRunner设置全局生效的配置，直接使用静态方法控制
  */
 public class QLExpressRunStrategy {
-
-
     /**
      * 预防空指针
      */
-
     private static boolean avoidNullPointer = false;
 
     /**
@@ -38,7 +35,6 @@ public class QLExpressRunStrategy {
     public static void setAvoidNullPointer(boolean avoidNullPointer) {
         QLExpressRunStrategy.avoidNullPointer = avoidNullPointer;
     }
-
 
     /**
      * 禁止调用不安全的方法
@@ -65,12 +61,10 @@ public class QLExpressRunStrategy {
     }
 
     public static void assertBlackMethod(Method m) throws QLSecurityRiskException {
-
         if (forbiddenInvokeSecurityRiskMethods && m != null) {
             if (securityRiskMethods.contains(m.getDeclaringClass().getName() + "." + m.getName())) {
                 throw new QLSecurityRiskException("使用QLExpress调用了不安全的系统方法:" + m.toString());
             }
         }
     }
-
 }

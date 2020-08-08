@@ -1,6 +1,5 @@
 package com.ql.util.express;
 
-
 import com.ql.util.express.exception.QLException;
 
 public final class RunEnvironment {
@@ -16,7 +15,6 @@ public final class RunEnvironment {
 
     private InstructionSet instructionSet;
     private InstructionSetContext context;
-
 
     public RunEnvironment(InstructionSet aInstructionSet, InstructionSetContext aContext, boolean aIsTrace) {
         dataContainer = new OperateData[INIT_DATA_LENTH];
@@ -41,13 +39,11 @@ public final class RunEnvironment {
 
         instructionSet = null;
         context = null;
-
     }
 
     public InstructionSet getInstructionSet() {
         return instructionSet;
     }
-
 
     public InstructionSetContext getContext() {
         return this.context;

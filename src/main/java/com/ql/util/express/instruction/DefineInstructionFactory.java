@@ -10,7 +10,6 @@ import com.ql.util.express.parse.ExpressNode;
 
 import java.util.Stack;
 
-
 class DefineInstructionFactory extends InstructionFactory {
     public boolean createInstruction(ExpressRunner aCompile, InstructionSet result, Stack<ForRelBreakContinue> forStack, ExpressNode node, boolean isRoot)
             throws Exception {

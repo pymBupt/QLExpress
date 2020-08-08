@@ -16,7 +16,6 @@ public class RuleParseTest {
                 "then add(inItem.features,'topCategoryId',inCategory.mainCategory.categoryId.cast2String());\n" +
                 "when inCategory.mainCategory.categoryId != 33\n" +
                 "then del(inItem.features,'topCategoryId');", runner);
-
     }
 
     private void parseRule(String s, ExpressRunner runner) throws Exception {

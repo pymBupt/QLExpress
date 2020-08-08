@@ -9,7 +9,6 @@ import org.junit.Test;
  */
 public class ContextMessagePutTest {
 
-
     class OperatorContextPut extends OperatorBase {
 
         public OperatorContextPut(String aName) {

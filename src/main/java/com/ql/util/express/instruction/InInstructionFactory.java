@@ -8,7 +8,6 @@ import com.ql.util.express.parse.ExpressNode;
 
 import java.util.Stack;
 
-
 public class InInstructionFactory extends InstructionFactory {
     public boolean createInstruction(ExpressRunner aCompile,
                                      InstructionSet result, Stack<ForRelBreakContinue> forStack,

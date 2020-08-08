@@ -6,7 +6,6 @@ import com.ql.util.express.IExpressContext;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class NewExpressTest {
     @Test
     public void testParse() throws Exception {

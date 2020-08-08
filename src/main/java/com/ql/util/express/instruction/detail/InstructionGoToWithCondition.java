@@ -53,7 +53,6 @@ public class InstructionGoToWithCondition extends Instruction {
         }
     }
 
-
     public String toString() {
         String result = "GoToIf[" + this.condition + ",isPop=" + this.isPopStackData + "] ";
         if (this.offset >= 0) {
@@ -86,6 +85,4 @@ public class InstructionGoToWithCondition extends Instruction {
     public void setPopStackData(boolean isPopStackData) {
         this.isPopStackData = isPopStackData;
     }
-
-
 }

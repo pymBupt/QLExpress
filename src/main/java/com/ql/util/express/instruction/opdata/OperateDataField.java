@@ -111,6 +111,5 @@ public class OperateDataField extends OperateDataAttr {
         } else {
             ExpressUtil.setProperty(fieldObject, transferFieldName(context, this.orgiFieldName), value);
         }
-
     }
 }

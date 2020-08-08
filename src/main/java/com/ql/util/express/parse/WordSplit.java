@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-
 /**
  * 语法解析类
  * 1、单词分解
@@ -116,7 +115,6 @@ public class WordSplit {
                 } else {
                     return 1;
                 }
-
             }
         });
         return splitWord;
@@ -133,7 +131,6 @@ public class WordSplit {
         }
     }
 
-
     public static String getPrintInfo(Object[] list, String splitOp) {
         StringBuffer buffer = new StringBuffer();
         for (int i = 0; i < list.length; i++) {
@@ -144,5 +141,4 @@ public class WordSplit {
         }
         return buffer.toString();
     }
-
 }

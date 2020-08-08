@@ -29,7 +29,6 @@ public class QLPattern {
         if (printStackDepth) {
             log.warn("递归堆栈深度:" + maxDeep.longValue() + "  重用QLMatchResult次数:" + resultCache.fetchCount
                     + "  新建QLMatchResult次数:" + resultCache.newCount + "  新建ArrayList数量:" + arrayListCache.newCount);
-
         }
         if (result == null || result.getMatchSize() == 0) {
             throw new QLCompileException("程序错误，不满足语法规范，没有匹配到合适的语法,最大匹配致[0:" + (maxMatchPoint.longValue() - 1) + "]");
@@ -109,8 +108,6 @@ public class QLPattern {
                 }
 
                 tempResult = resultDetail;
-
-
             } else if (pattern.matchMode == MatchMode.AND) {
                 //tempResult = matchAndOneTime(aManager,pattern,nodes, lastPoint,maxMatchPoint,deep,maxDeep);
 
@@ -181,8 +178,6 @@ public class QLPattern {
                 if (tempListAnd != null) {
                     staticParams.arrayListCache.sendBack(tempListAnd);
                 }
-
-
             } else if (pattern.matchMode == MatchMode.OR) {
                 //tempResult = matchOrOneTime(aManager,pattern,nodes, lastPoint,maxMatchPoint,deep,maxDeep);
 
@@ -192,7 +187,6 @@ public class QLPattern {
                         break;
                     }
                 }
-
             } else {
                 throw new QLCompileException("不正确的类型：" + pattern.matchMode.toString());
             }
@@ -327,7 +321,6 @@ public class QLPattern {
                 cache[this.point].clear();
             }
         }
-
     }
 
     public static class ArrayListCache<T> {

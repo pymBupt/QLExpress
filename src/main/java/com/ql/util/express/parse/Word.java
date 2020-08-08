@@ -1,6 +1,5 @@
 package com.ql.util.express.parse;
 
-
 public class Word {
     public String word;
     public int line;

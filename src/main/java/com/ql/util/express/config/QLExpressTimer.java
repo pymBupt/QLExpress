@@ -20,7 +20,6 @@ public class QLExpressTimer {
     private static ThreadLocal<Long> END_TIME = new ThreadLocal<Long>() {
     };
 
-
     /**
      * 设置计时器
      *
@@ -41,7 +40,6 @@ public class QLExpressTimer {
             END_TIME.set(t + TIME_OUT_MILLIS.get());
         }
     }
-
 
     /**
      * 断言是否超时

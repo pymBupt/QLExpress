@@ -232,7 +232,6 @@ public class ExpressRunner {
     public void addFunctionAndClassMethod(String name, Class<?> bindingClass, OperatorBase op) {
         this.addFunction(name, op);
         this.addClassMethod(name, bindingClass, op);
-
     }
 
     ;
@@ -302,7 +301,6 @@ public class ExpressRunner {
                                          String errorInfo) throws Exception {
         this.addFunction(name, new OperatorSelfDefineClassFunction(name,
                 aClassName, aFunctionName, aParameterClassTypes, null, null, errorInfo));
-
     }
 
     /**
@@ -320,7 +318,6 @@ public class ExpressRunner {
                                          String errorInfo) throws Exception {
         this.addFunction(name, new OperatorSelfDefineClassFunction(name,
                 aClass, aFunctionName, aParameterClassTypes, null, null, errorInfo));
-
     }
 
     /**
@@ -341,7 +338,6 @@ public class ExpressRunner {
                                          String errorInfo) throws Exception {
         this.addFunction(name, new OperatorSelfDefineClassFunction(name,
                 aClassName, aFunctionName, aParameterClassTypes, aParameterDesc, aParameterAnnotation, errorInfo));
-
     }
 
     /**
@@ -380,7 +376,6 @@ public class ExpressRunner {
             throws Exception {
         this.addFunction(name, new OperatorSelfDefineClassFunction(name,
                 aClassName, aFunctionName, aParameterTypes, aParameterDesc, aParameterAnnotation, errorInfo));
-
     }
 
     /**
@@ -398,7 +393,6 @@ public class ExpressRunner {
                                            String errorInfo) throws Exception {
         this.addFunction(name, new OperatorSelfDefineServiceFunction(name,
                 aServiceObject, aFunctionName, aParameterClassTypes, null, null, errorInfo));
-
     }
 
     /**
@@ -419,7 +413,6 @@ public class ExpressRunner {
                                            String errorInfo) throws Exception {
         this.addFunction(name, new OperatorSelfDefineServiceFunction(name,
                 aServiceObject, aFunctionName, aParameterClassTypes, aParameterDesc, aParameterAnnotation, errorInfo));
-
     }
 
     /**
@@ -437,7 +430,6 @@ public class ExpressRunner {
             throws Exception {
         this.addFunction(name, new OperatorSelfDefineServiceFunction(name,
                 aServiceObject, aFunctionName, aParameterTypes, null, null, errorInfo));
-
     }
 
     public void addFunctionOfServiceMethod(String name, Object aServiceObject,
@@ -447,7 +439,6 @@ public class ExpressRunner {
             throws Exception {
         this.addFunction(name, new OperatorSelfDefineServiceFunction(name,
                 aServiceObject, aFunctionName, aParameterTypes, aParameterDesc, aParameterAnnotation, errorInfo));
-
     }
 
     /**
@@ -549,7 +540,6 @@ public class ExpressRunner {
                                        boolean isTrace, boolean isCatchException, Log aLog) throws Exception {
         return InstructionSetRunner.executeOuter(this, this.loader.getInstructionSet(name), this.loader, context, errorList,
                 isTrace, isCatchException, aLog, false);
-
     }
 
     /**
@@ -832,7 +822,6 @@ public class ExpressRunner {
     public String[] getOutFunctionNames(String express) throws Exception {
         return this.parseInstructionSet(express).getOutFunctionNames();
     }
-
 
     public boolean isShortCircuit() {
         return isShortCircuit;

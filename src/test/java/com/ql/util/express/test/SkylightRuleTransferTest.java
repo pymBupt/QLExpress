@@ -36,9 +36,7 @@ public class SkylightRuleTransferTest {
                 throw new Exception("规则定义不合法");
             }
         }
-
     }
-
 
     @Test
     public void helloWorld() throws Exception {
@@ -47,6 +45,5 @@ public class SkylightRuleTransferTest {
         System.out.println("code:" + rule.code);
         System.out.println("name:" + rule.name);
         System.out.println("ql脚本:\n" + rule.ql);
-
     }
 }

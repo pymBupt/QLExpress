@@ -6,7 +6,6 @@ import org.apache.commons.logging.LogFactory;
 
 import java.util.List;
 
-
 public abstract class Instruction implements java.io.Serializable {
 
     private static final long serialVersionUID = 1361458333068300443L;

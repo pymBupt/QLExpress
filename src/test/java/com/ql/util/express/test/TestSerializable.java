@@ -33,12 +33,9 @@ public class TestSerializable {
             in.close();
 
             System.out.print(newStaff);
-
         } catch (Exception e) {
 
             throw e;
-
         }
-
     }
 }

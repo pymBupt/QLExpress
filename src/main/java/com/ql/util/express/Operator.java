@@ -121,5 +121,4 @@ public abstract class Operator extends OperatorBase {
             throw new QLException(op1 + "和" + op2 + "不能执行compare 操作");
         return compareResult;
     }
-
 }

@@ -34,7 +34,6 @@ public class DateFormatTest {
             }
         });
 
-
         IExpressContext<String, Object> context = new DefaultContext<String, Object>();
         context.put("nowStr", new SimpleDateFormat("yyyy-MM-dd").parse("2018-02-23"));
 
@@ -60,6 +59,5 @@ public class DateFormatTest {
         }
         long cost = System.currentTimeMillis() - start;
         System.out.println(sb + "   运行10万次，耗时:" + cost + "ms");
-
     }
 }

@@ -37,7 +37,6 @@ public class InstructionGoToWithNotNull extends Instruction {
         }
     }
 
-
     public String toString() {
         String result = "GoToIf[NOTNULL,isPop=" + this.isPopStackData + "] ";
         if (this.offset >= 0) {
@@ -62,6 +61,4 @@ public class InstructionGoToWithNotNull extends Instruction {
     public void setPopStackData(boolean isPopStackData) {
         this.isPopStackData = isPopStackData;
     }
-
-
 }

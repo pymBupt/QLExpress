@@ -54,7 +54,6 @@ public class SimpleShortCircuitLogicTest {
                 System.out.println(error);
             }
         }
-
     }
 
     /**
@@ -81,7 +80,5 @@ public class SimpleShortCircuitLogicTest {
                 System.out.println(error);
             }
         }
-
     }
-
 }

@@ -28,7 +28,6 @@ public class ReplaceComapreOpetatorTest {
     public class NullableOperatorLike extends OperatorLike {
         public NullableOperatorLike(String name) {
             super(name);
-
         }
 
         public Object executeInner(Object op1, Object op2) throws Exception {

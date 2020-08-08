@@ -4,7 +4,6 @@ import com.ql.util.express.ExpressUtil;
 import com.ql.util.express.InstructionSetContext;
 import com.ql.util.express.OperateData;
 
-
 public class OperateDataAttr extends OperateData {
     protected String name;
 

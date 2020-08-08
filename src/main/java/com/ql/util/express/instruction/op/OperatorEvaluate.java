@@ -31,7 +31,6 @@ public class OperatorEvaluate extends OperatorBase {
                         + ExpressUtil.getClassName(sourceType) + " 不能转换为 "
                         + ExpressUtil.getClassName(targetType));
             }
-
         }
         Object result = op2.getObject(parent);
         if (targetType != null) {
@@ -40,5 +39,4 @@ public class OperatorEvaluate extends OperatorBase {
         op1.setObject(parent, result);
         return op1;
     }
-
 }

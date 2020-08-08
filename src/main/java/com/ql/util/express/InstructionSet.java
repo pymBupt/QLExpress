@@ -13,7 +13,6 @@ import java.io.Serializable;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-
 /**
  * 表达式执行编译后形成的指令集合
  *
@@ -35,7 +34,6 @@ public class InstructionSet implements Serializable {
     public static String TYPE_MARCO = "marco";
 
     public static boolean printInstructionError = false;
-
 
     private String type = "main";
     private String name;
@@ -77,7 +75,6 @@ public class InstructionSet implements Serializable {
             }
         }
         return result.keySet().toArray(new String[0]);
-
     }
 
     public String[] getVirClasses() throws Exception {
@@ -90,7 +87,6 @@ public class InstructionSet implements Serializable {
             }
         }
         return result.keySet().toArray(new String[0]);
-
     }
 
     public String[] getOutAttrNames() throws Exception {
@@ -127,7 +123,6 @@ public class InstructionSet implements Serializable {
         }
         return result.keySet().toArray(new String[0]);
     }
-
 
     /**
      * 添加指令，为了提高运行期的效率，指令集用数组存储
@@ -250,7 +245,6 @@ public class InstructionSet implements Serializable {
         result.addAll(this.exportVar);
         return result;
     }
-
 
     public OperateDataLocalVar[] getParameters() {
         return this.parameterList.toArray(new OperateDataLocalVar[0]);

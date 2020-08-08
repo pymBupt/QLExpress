@@ -1,6 +1,5 @@
 package com.ql.util.express;
 
-
 import com.ql.util.express.exception.QLException;
 
 /**

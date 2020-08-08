@@ -41,13 +41,10 @@ public class AppendingClassMethodManager {
             }
         }
         return null;
-
     }
 
     public OperateData invoke(AppendingMethod method, InstructionSetContext context, ArraySwap list, List<String> errorList) throws Exception {
         OperatorBase op = method.op;
         return op.execute(context, list, errorList);
     }
-
-
 }

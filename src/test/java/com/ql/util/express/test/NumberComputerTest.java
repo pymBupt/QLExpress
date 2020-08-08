@@ -56,7 +56,6 @@ public class NumberComputerTest {
         context.put("bean", bean);
         r = runner.execute(expressString, context, null, false, false);
         Assert.assertTrue("精度计算错误", r.getClass().equals(BigDecimal.class));
-
     }
 
     @Test

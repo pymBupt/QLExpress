@@ -79,6 +79,5 @@ public class InstructionSetRunner {
             }
         }
         return result;
-
     }
 }

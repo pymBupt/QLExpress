@@ -48,7 +48,6 @@ public class QLPatternNode {
      */
     protected int maxMatchNum = 1;
 
-
     /**
      * 匹配类型，例如 ID,if,SELECT
      */
@@ -118,7 +117,6 @@ public class QLPatternNode {
                 }
             }
         }
-
     }
 
     public void splitChild() throws Exception {
@@ -209,7 +207,6 @@ public class QLPatternNode {
             tempStr = tempStr.substring(0, tempStr.length() - 1);
         }
 
-
         if (tempStr.endsWith("~") && tempStr.length() > 1) {
             this.isSkip = true;
             tempStr = tempStr.substring(0, tempStr.length() - 1);
@@ -225,7 +222,6 @@ public class QLPatternNode {
             this.children.add(new QLPatternNode(this.nodeTypeManager, "ANONY_PATTERN", tempStr.substring(1, tempStr.length() - 1), false, this.level + 1));
             this.matchMode = MatchMode.AND;
             tempStr = "";
-
         }
 
         int index = tempStr.indexOf("->");

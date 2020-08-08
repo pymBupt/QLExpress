@@ -11,7 +11,6 @@ import java.util.List;
  */
 public abstract class ExpressRemoteCacheRunner {
 
-
     public void loadCache(String expressName, String text) {
         InstructionSet instructionSet;
         try {
@@ -25,7 +24,6 @@ public abstract class ExpressRemoteCacheRunner {
             throw new RuntimeException("解析指令并缓存过程出现错误.", e);
         }
     }
-
 
     public Object execute(String name, IExpressContext<String, Object> context, List<String> errorList,
                           boolean isTrace, boolean isCatchException, Log aLog) {
@@ -62,7 +60,6 @@ public abstract class ExpressRemoteCacheRunner {
      * @param object
      */
     public abstract void putCache(String key, Object object);
-
 }
 
 

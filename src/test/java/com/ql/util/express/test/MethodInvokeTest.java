@@ -10,7 +10,6 @@ import org.junit.Test;
  */
 public class MethodInvokeTest {
 
-
     @Test
     public void testNullParameter() throws Exception {
         ExpressRunner runner = new ExpressRunner(false, false);
@@ -47,7 +46,6 @@ public class MethodInvokeTest {
         Object r = runner.execute("getSearchResult(getOnlinePersonalShopInfo(123L))",
                 expressContext, null, false, false);
         System.out.print("r=" + r);
-
     }
 
     @Test
@@ -107,7 +105,6 @@ public class MethodInvokeTest {
         throw new Exception("return void exception not checked!");
     }
 
-
     //查找在线的店铺信息
     public PersonalShopInfo getOnlinePersonalShopInfo(long userId) {
         return null;
@@ -126,7 +123,6 @@ public class MethodInvokeTest {
     public void testVoidMethod(Long id) {
         System.out.println("testVoidMethod");
     }
-
 }
 
 class PersonalShopInfo {

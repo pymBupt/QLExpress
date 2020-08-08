@@ -159,7 +159,6 @@ public class OperatorOfNumber {
             return o1.compareTo(o2);
         }
         throw new RuntimeException("比较操作错误:op1=" + op1.toString() + ",op2=" + op2.toString());
-
     }
 
     public static Object add(Object op1, Object op2, boolean isPrecise) throws Exception {
@@ -210,7 +209,6 @@ public class OperatorOfNumber {
 
 class NormalNumberOperator {
 
-
     /**
      * 普通的加法运算
      *
@@ -233,7 +231,6 @@ class NormalNumberOperator {
             return new BigDecimal(op1.toString()).add(new BigDecimal(op2.toString()));
         throw new QLException("不支持的对象执行了\"+\"操作");
     }
-
 
     public static Number subtractNormal(Number op1, Number op2) throws Exception {
         int type1 = OperatorOfNumber.getSeq(op1.getClass());
@@ -279,7 +276,6 @@ class NormalNumberOperator {
             return new BigDecimal(op1.toString()).divide(new BigDecimal(op2.toString()), BigDecimal.ROUND_HALF_UP);
         throw new QLException("不支持的对象执行了\"/\"操作");
     }
-
 
     public static Number moduloNormal(Number op1, Number op2) throws Exception {
         int type1 = OperatorOfNumber.getSeq(op1.getClass());
@@ -327,7 +323,6 @@ class PreciseNumberOperator {
         } else {
             return result;
         }
-
     }
 
     public static Number subtractPrecise(Number op1, Number op2) throws Exception {

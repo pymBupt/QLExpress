@@ -182,11 +182,9 @@ public class ConsoleFrame2
                     + "\nQL>");
         } catch (Exception e1) {
             e1.printStackTrace(new PrintWriter(writer));
-
         }
         //System.out.println(writer.toString());
         jTextAreaResult.setText(writer.toString());
-
     }
 
     public void jTreeFileSelect_mouseClicked(MouseEvent me) {
@@ -201,7 +199,6 @@ public class ConsoleFrame2
         } catch (Exception e) {
             e.printStackTrace(new PrintWriter(writer));
         }
-
     }
 }
 

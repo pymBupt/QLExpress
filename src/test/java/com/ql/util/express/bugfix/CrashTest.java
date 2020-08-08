@@ -12,12 +12,10 @@ import java.util.concurrent.CyclicBarrier;
  */
 public class CrashTest {
 
-
     @Test
     public void helloworld() {
 
     }
-
 
     public static String[] splitWord = {
             "~", "&", "|", "<<", ">>",//位操作
@@ -60,7 +58,6 @@ public class CrashTest {
             try {
 
                 barrier.await();
-
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (BrokenBarrierException e) {

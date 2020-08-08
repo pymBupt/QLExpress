@@ -13,7 +13,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 /**
  * 表达式工具类
  *
@@ -58,7 +57,6 @@ public class ExpressUtil {
             {char.class, Character.class}, {Character.class, char.class},
             {boolean.class, Boolean.class}, {Boolean.class, boolean.class}
     };
-
 
     public static Class<?> getSimpleDataType(Class<?> aClass) {
         if (aClass.isPrimitive()) {
@@ -147,7 +145,6 @@ public class ExpressUtil {
         }
 
         return false;
-
     }
 
     public static boolean isAssignableOld(Class<?> lhsType, Class<?> rhsType) {
@@ -242,7 +239,6 @@ public class ExpressUtil {
         }
 //		builder.append(")");
         return builder.toString();
-
     }
 
     public static Method findMethodWithCache(Class<?> baseClass, String methodName,
@@ -306,7 +302,6 @@ public class ExpressUtil {
 
         int match = findMostSpecificSignature(idealMatch, candidateSigs);
         return match == -1 ? null : methods[match];
-
     }
 
     private static List<Method> gatherMethodsRecursive(Class<?> baseClass,
@@ -397,7 +392,6 @@ public class ExpressUtil {
         } catch (ClassNotFoundException ex) {
             throw new RuntimeException(ex);
         }
-
     }
 
     public static Class<?> getJavaClassInner(String type) {
@@ -635,12 +629,10 @@ public class ExpressUtil {
                 }
             }
             return value;
-
         } else {
             return value;
         }
     }
-
 
     public static void main(String[] args) throws Exception {
         System.out.println(replaceString("$1强化$2实施$2", new String[]{"qq",

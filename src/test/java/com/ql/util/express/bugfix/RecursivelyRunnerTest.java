@@ -16,7 +16,6 @@ public class RecursivelyRunnerTest {
         String express = "eval('10')+eval('20')+eval('30')";
         Object r = runner.execute(express, null, null, true, false);
         System.out.println(r);
-
     }
 
     @Test
@@ -34,7 +33,6 @@ public class RecursivelyRunnerTest {
         String express = "eval('10')+eval('20')+eval('30')";
         Object r = runner.execute(express, null, null, true, false);
         System.out.println(r);
-
     }
 
     public static class EvalOperator extends Operator {

@@ -42,7 +42,6 @@ public class AppendingClassFieldManager {
             }
         }
         return null;
-
     }
 
     public Object invoke(AppendingField Field, InstructionSetContext context, Object aFieldObject, List<String> errorList) throws Exception {
@@ -50,6 +49,4 @@ public class AppendingClassFieldManager {
         Object result = op.executeInner(new Object[]{aFieldObject});
         return result;
     }
-
-
 }

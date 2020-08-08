@@ -67,6 +67,4 @@ public class SpringDemoTest extends UnitilsJUnit4 {
         qlExpressUtil.execute(express,
                 context);
     }
-
-
 }

@@ -12,7 +12,6 @@ public class ExpressRemoteCacheTest {
         cacheRunner.loadCache("加法计算", "a+b");
         cacheRunner.loadCache("减法计算", "a-b");
 
-
         IExpressContext<String, Object> context = new DefaultContext<String, Object>();
         context.put("a", 1);
         context.put("b", 2);
@@ -35,5 +34,4 @@ public class ExpressRemoteCacheTest {
             System.out.println("没有定义乘法计算器.");
         }
     }
-
 }

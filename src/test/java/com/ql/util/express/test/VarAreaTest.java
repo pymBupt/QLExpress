@@ -25,7 +25,6 @@ public class VarAreaTest {
         System.out.println(r);
         System.out.println(context);
         Assert.assertTrue("变量定义作用域错误", context.get("qh").toString().equals("104"));
-
     }
 
     @org.junit.Test
@@ -48,6 +47,5 @@ public class VarAreaTest {
         System.out.println(r);
         System.out.println(context);
         Assert.assertTrue("变量定义作用域错误", context.get("qh").toString().equals("2"));
-
     }
 }

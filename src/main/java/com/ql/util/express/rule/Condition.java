@@ -11,7 +11,6 @@ import java.util.List;
 
 public class Condition extends Node {
 
-
     private boolean prior = false;
 
     private ConditionType type;
@@ -72,6 +71,5 @@ public class Condition extends Node {
             return new StringBuilder("(").append(orig).append(")").toString();
         }
         return orig;
-
     }
 }

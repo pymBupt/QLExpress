@@ -26,7 +26,6 @@ public class ImportClassPath {
             //e.printStackTrace();
             Assert.assertTrue(true);
             return;
-
         }
         Assert.assertTrue(false);
     }

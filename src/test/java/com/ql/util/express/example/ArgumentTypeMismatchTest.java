@@ -11,7 +11,6 @@ import org.junit.Test;
  */
 public class ArgumentTypeMismatchTest {
 
-
     private static ArgumentTypeMismatchTest singleton = new ArgumentTypeMismatchTest();
 
     public void functionABC(Long a, Integer b, String c) {

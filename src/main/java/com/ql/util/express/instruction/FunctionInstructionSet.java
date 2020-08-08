@@ -4,7 +4,6 @@ import com.ql.util.express.InstructionSet;
 
 import java.io.Serializable;
 
-
 public class FunctionInstructionSet implements Serializable {
     private static final long serialVersionUID = 8735208809492617401L;
     public String name;
@@ -16,5 +15,4 @@ public class FunctionInstructionSet implements Serializable {
         this.type = aType;
         this.instructionSet = aInstructionSet;
     }
-
 }

@@ -25,6 +25,5 @@ public class OperatorMultiDiv extends Operator {
             obj = OperatorOfNumber.modulo(op1, op2);
 
         return obj;
-
     }
 }

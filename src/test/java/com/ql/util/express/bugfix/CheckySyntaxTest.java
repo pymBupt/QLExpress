@@ -11,7 +11,6 @@ import java.util.ArrayList;
  */
 public class CheckySyntaxTest {
 
-
     @Test
     public void testCheckySyntax0() throws Exception {
         ExpressRunner runner = new ExpressRunner(false, true);
@@ -46,5 +45,4 @@ public class CheckySyntaxTest {
             System.out.println("未识别的java类列表:" + mockClasses);
         }
     }
-
 }

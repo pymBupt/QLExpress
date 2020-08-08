@@ -88,7 +88,6 @@ public class OperateDataCacheImpl implements IOperateDataCache {
         callResultPoint = 0;
         environmentPoint = 0;
         contextPoint = 0;
-
     }
 
     public InstructionSetContext fetchInstructionSetContext(boolean aIsExpandToParent, ExpressRunner aRunner, IExpressContext<String, Object> aParent, ExpressLoader aExpressLoader, boolean aIsSupportDynamicFieldName) {
@@ -202,5 +201,4 @@ public class OperateDataCacheImpl implements IOperateDataCache {
     public long getFetchCount() {
         return 0;
     }
-
 }

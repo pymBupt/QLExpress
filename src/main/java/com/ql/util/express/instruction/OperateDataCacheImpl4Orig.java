@@ -3,7 +3,6 @@ package com.ql.util.express.instruction;
 import com.ql.util.express.*;
 import com.ql.util.express.instruction.opdata.*;
 
-
 class OperateDataCacheImpl4Orig implements IOperateDataCache {
 
     public OperateData fetchOperateData(Object obj, Class<?> aType) {
@@ -49,5 +48,4 @@ class OperateDataCacheImpl4Orig implements IOperateDataCache {
     public long getFetchCount() {
         return 0;
     }
-
 }

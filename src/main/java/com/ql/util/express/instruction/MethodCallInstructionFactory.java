@@ -10,7 +10,6 @@ import com.ql.util.express.parse.ExpressNode;
 
 import java.util.Stack;
 
-
 public class MethodCallInstructionFactory extends InstructionFactory {
     public boolean createInstruction(ExpressRunner aCompile,
                                      InstructionSet result, Stack<ForRelBreakContinue> forStack,
@@ -34,5 +33,4 @@ public class MethodCallInstructionFactory extends InstructionFactory {
         result.addInstruction(new InstructionOperator(op, children.length - 1).setLine(node.getLine()));
         return returnVal;
     }
-
 }

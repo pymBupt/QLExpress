@@ -363,7 +363,6 @@ public class ExpressParse {
 
     public ExpressNode parse(ExpressPackage rootExpressPackage, Word[] words, String express, boolean isTrace, Map<String, String> selfDefineClass, boolean mockRemoteJavaClass) throws Exception {
 
-
         List<ExpressNode> tempList = this.transferWord2ExpressNode(rootExpressPackage, words, selfDefineClass, true);
         if (isTrace == true && log.isDebugEnabled()) {
             log.debug("单词分析结果:" + printInfo(tempList, ","));

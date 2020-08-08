@@ -75,6 +75,5 @@ public class RuleTraceTest {
         System.out.println("result:\n" + ruleResult.getResult());
         System.out.println("tree:\n" + ruleResult.getRule().toTree());
         System.out.println("trace:\n" + ruleResult.getTraceMap());
-
     }
 }

@@ -10,7 +10,6 @@ import org.junit.Test;
  */
 public class LuofanTest {
 
-
     public class Response {
 
     }

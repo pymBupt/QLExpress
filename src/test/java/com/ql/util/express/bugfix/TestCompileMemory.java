@@ -10,7 +10,6 @@ import java.util.List;
 
 public class TestCompileMemory {
 
-
     @Test
     public void test() throws Exception {
 
@@ -114,16 +113,13 @@ public class TestCompileMemory {
                 "formDO.setFieldList(fieldList);\n" +
                 "return formDO;";
 
-
         expressList.add(demo);
-
 
         demo = "max(1,max(2,max(3,max(4,max(5,max(6,7))))))";
         expressList.add(demo);
 
         demo = "for(i=0;i<100;i++){System.out.println(11111)}";
         expressList.add(demo);
-
 
         for (String express : expressList) {
             ExpressRunner runner2 = new ExpressRunner();

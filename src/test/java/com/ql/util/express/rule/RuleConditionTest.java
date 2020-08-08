@@ -12,7 +12,6 @@ public class RuleConditionTest {
     public void test() throws Exception {
         ExpressRunner runner = new ExpressRunner();
         parseRule("max(metric1,30) < 20 and min(metric2,40) > 30", runner);
-
     }
 
     private void parseRule(String s, ExpressRunner runner) throws Exception {
@@ -28,6 +27,5 @@ public class RuleConditionTest {
         for (Condition child : root.getChildren()) {
             printCondition(child);
         }
-
     }
 }

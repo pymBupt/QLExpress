@@ -9,7 +9,6 @@ import org.junit.Test;
 
 public class GetExpressFunctionNamesTest {
 
-
     public Object fun3(Object a, Object b) {
         return "" + a + b;
     }
@@ -65,6 +64,5 @@ public class GetExpressFunctionNamesTest {
         context = new DefaultContext<String, Object>();
         r = runner.execute(express, context, null, false, false);
         System.out.println("result : " + r);
-
     }
 }

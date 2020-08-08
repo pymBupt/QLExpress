@@ -10,7 +10,6 @@ import org.junit.Test;
 
 public class AvoidNullPointMockTest {
 
-
     public class DemoObject {
         private String code;
         private DemoObject parent;

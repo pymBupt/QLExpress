@@ -4,7 +4,6 @@ import org.junit.Test;
 
 public class TestOverFlow {
 
-
     public class Result {
         private int a = 0;
         private String b = "我是一个长长的字符串";
@@ -56,12 +55,10 @@ public class TestOverFlow {
         fun_abc(a + 1, b + 1, c + 1);
     }
 
-
     public void fun_abc2(int a, int b, int c) {
         count++;
         fun_a(a, b, c);
     }
-
 
     public void fun_a(int a, int b, int c) {
         count++;
@@ -134,7 +131,6 @@ public class TestOverFlow {
             System.out.println("fun_abc2() 最大栈深度:" + count);
         }
     }
-
 
     public void testOverFlow() {
         test();

@@ -5,7 +5,6 @@ import com.ql.util.express.IExpressContext;
 import com.ql.util.express.InstructionSetContext;
 import com.ql.util.express.OperateData;
 
-
 /**
  * 处理 ",","(",")",";"
  */

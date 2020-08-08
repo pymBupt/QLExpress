@@ -59,7 +59,6 @@ public class TestMethodParams {
         return result;
     }
 
-
     //等价于Integer[] params
     public Integer integerArrayInvoke(Integer... params) throws Exception {
         if (params == null) {
@@ -134,12 +133,10 @@ public class TestMethodParams {
         testInvoke("objectArrayInvokeWithHead('hello:',[1,2,3,null,4])", "hello:10", runner, expressContext);
     }
 
-
     @Test
     public void testDynamicParams() throws Exception {
 
         DynamicParamsUtil.supportDynamicParams = true;
-
 
         ExpressRunner runner = new ExpressRunner();
         IExpressContext<String, Object> expressContext = new DefaultContext<String, Object>();
@@ -167,14 +164,11 @@ public class TestMethodParams {
         testInvoke("objectArrayInvoke('1',2,3,null,4)", "1,2,3,4,", runner, expressContext);
         //带有head
         testInvoke("objectArrayInvokeWithHead('hello:',1,2,3,null,4)", "hello:10", runner, expressContext);
-
     }
 
     void testInvoke(String text, String expert, ExpressRunner runner, IExpressContext<String, Object> expressContext) throws Exception {
 
         Object r = runner.execute(text, expressContext, null, false, false);
         assert (r.toString().equals(expert));
-
     }
-
 }

@@ -1,6 +1,5 @@
 package com.ql.util.express.parse;
 
-
 public class KeyWordDefine4Java {
     public String[] splitWord = {
             "^", "~", "&", "|", "<<", ">>",// 位操作
@@ -32,7 +31,6 @@ public class KeyWordDefine4Java {
             "RIGHT_COMMENT:TYPE=WORDDEF,DEFINE=**/",
             "MULTI:TYPE=WORDDEF,DEFINE=*",
 
-
             "CONST_BYTE:TYPE=WORDDEF",
             "CONST_SHORT:TYPE=WORDDEF",
             "CONST_INTEGER:TYPE=WORDDEF",
@@ -63,7 +61,6 @@ public class KeyWordDefine4Java {
 
             "PARAMETER_LIST:TYPE=STATEMENT,DEFINE=LEFT_BRACKET~$(RIGHT_BRACKET~|(EXPRESS$(,~$EXPRESS)*$RIGHT_BRACKET~))",
 
-
             "VAR_DEFINE:TYPE=EXPRESS,DEFINE=(CONST_CLASS|VClass->CONST_STRING)$(([$])#[])*$ID->CONST_STRING#def",
             "EXPORT_VAR_DEFINE:TYPE=EXPRESS,DEFINE=exportDef^$CONST_CLASS$ID->CONST_STRING",
             "NEW_OBJECT:TYPE=EXPRESS,DEFINE=new->NEW_OBJECT^$CONST_CLASS$PARAMETER_LIST",
@@ -81,7 +78,6 @@ public class KeyWordDefine4Java {
             "FUNCTION_CALL:TYPE=EXPRESS,DEFINE=(ID->CONST_STRING|FUNCTION_NAME->CONST_STRING)$PARAMETER_LIST#FUNCTION_CALL",
 
             "ARRAY_CALL:TYPE=EXPRESS,DEFINE=(FUNCTION_CALL|OBJECT_CALL)$([->ARRAY_CALL^$EXPRESS$]~)^*$(METHOD_CALL|FIELD_CALL)^*",
-
 
             "CAST_CALL:TYPE=EXPRESS,DEFINE=(LEFT_BRACKET~$CONST_CLASS$RIGHT_BRACKET~#cast)^*$ARRAY_CALL",
             "EXPRESS_OP_L1:TYPE=EXPRESS,DEFINE=OP_LEVEL1^*$CAST_CALL",
@@ -153,6 +149,5 @@ public class KeyWordDefine4Java {
             {"NEW_VIR_OBJECT", "com.ql.util.express.instruction.NewVClassInstructionFactory"},
             {"COMMENT", "com.ql.util.express.instruction.NullInstructionFactory"},
             {"EXPRESS_KEY_VALUE", "com.ql.util.express.instruction.KeyValueInstructionFactory"},
-
     };
 }

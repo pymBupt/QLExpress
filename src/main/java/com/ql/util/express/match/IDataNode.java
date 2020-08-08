@@ -1,6 +1,5 @@
 package com.ql.util.express.match;
 
-
 public interface IDataNode {
     public void setNodeType(INodeType type);
 
