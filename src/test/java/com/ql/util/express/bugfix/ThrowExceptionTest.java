@@ -13,7 +13,7 @@ import org.junit.Test;
  * Created by tianqiao on 17/6/20.
  */
 public class ThrowExceptionTest {
-    
+
     public String testParseLong(String a) throws Exception {
         return Long.valueOf(a).toString();
     }
@@ -35,7 +35,7 @@ public class ThrowExceptionTest {
                 "1a>1"
         };
 
-        for(String exp : expList) {
+        for (String exp : expList) {
             try {
                 runExpress(exp);
             } catch (QLCompileException e) {
@@ -57,7 +57,7 @@ public class ThrowExceptionTest {
                 "a = new com.ql.util.express.bugfix.ThrowExceptionTest();a.testParseLong2('11112LL')"
         };
 
-        for(String exp : expList) {
+        for (String exp : expList) {
             try {
                 runExpress(exp);
             } catch (QLException e) {
@@ -70,7 +70,7 @@ public class ThrowExceptionTest {
             }
         }
     }
-    
+
     @Test
     public void testQLBizException() throws Exception {
 
@@ -78,7 +78,7 @@ public class ThrowExceptionTest {
                 "a = new com.ql.util.express.bugfix.ThrowExceptionTest();a.testParseLong('11112LL')"
         };
 
-        for(String exp : expList) {
+        for (String exp : expList) {
             try {
                 runExpress(exp);
             } catch (QLBizException e) {

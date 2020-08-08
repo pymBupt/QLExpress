@@ -9,15 +9,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestCompileMemory {
-    
-    
+
+
     @Test
     public void test() throws Exception {
-        
+
         QLPattern.printStackDepth = true;
-    
+
         List<String> expressList = new ArrayList<String>();
-        
+
         String demo = "fieldList = formDO.getFieldList();\n" +
                 "submitBtn = formDO.getSubmitBtn();\n" +
                 "leaf = parentCat.leaf;\n" +
@@ -113,23 +113,23 @@ public class TestCompileMemory {
                 "}\n" +
                 "formDO.setFieldList(fieldList);\n" +
                 "return formDO;";
-        
+
 
         expressList.add(demo);
-        
-        
-        demo =  "max(1,max(2,max(3,max(4,max(5,max(6,7))))))";
+
+
+        demo = "max(1,max(2,max(3,max(4,max(5,max(6,7))))))";
         expressList.add(demo);
-    
-        demo =  "for(i=0;i<100;i++){System.out.println(11111)}";
+
+        demo = "for(i=0;i<100;i++){System.out.println(11111)}";
         expressList.add(demo);
-        
-        
-        for(String express : expressList) {
+
+
+        for (String express : expressList) {
             ExpressRunner runner2 = new ExpressRunner();
-    
+
             InstructionSet result2 = runner2.parseInstructionSet(express);
-    
+
             System.out.println(express + " 编译结果如下:\n" + result2);
         }
         QLPattern.printStackDepth = false;

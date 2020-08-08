@@ -10,32 +10,32 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class NullCompareTest {
-    
+
     @Before
-    public void before()        
-    {
+    public void before() {
         QLExpressRunStrategy.setCompareNullLessMoreAsFalse(true);
     }
+
     @After
-    public void after()
-    {
+    public void after() {
         QLExpressRunStrategy.setCompareNullLessMoreAsFalse(false);
     }
+
     @Test
-    public void testNullCompar() throws Exception{
-        
+    public void testNullCompar() throws Exception {
+
         ExpressRunner runner = new ExpressRunner();
         String[] explist = new String[]{
                 "x < 1",
                 "y > 1",
                 "x != 2",
         };
-        for(String exp:explist) {
+        for (String exp : explist) {
             IExpressContext<String, Object> context = new DefaultContext<String, Object>();
             System.out.println(exp);
-            ((DefaultContext<String, Object>) context).put("x",2);
+            ((DefaultContext<String, Object>) context).put("x", 2);
             Object result = runner.execute(exp, context, null, true, false);
-            Assert.assertTrue((Boolean)result==false);
+            Assert.assertTrue((Boolean) result == false);
             System.out.println(result);
         }
 
@@ -44,12 +44,12 @@ public class NullCompareTest {
                 "y == null",
                 "x == 2",
         };
-        for(String exp:explist) {
+        for (String exp : explist) {
             IExpressContext<String, Object> context = new DefaultContext<String, Object>();
             System.out.println(exp);
-            ((DefaultContext<String, Object>) context).put("x",2);
+            ((DefaultContext<String, Object>) context).put("x", 2);
             Object result = runner.execute(exp, context, null, true, false);
-            Assert.assertTrue((Boolean)result==true);
+            Assert.assertTrue((Boolean) result == true);
             System.out.println(result);
         }
     }

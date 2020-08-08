@@ -9,26 +9,26 @@ public class RuleResult {
 
     private boolean hasException = false;
     private Rule rule;
-    private Map<String,Boolean> traceMap;
+    private Map<String, Boolean> traceMap;
     private Object result;
     private String script;
-    
+
     public String getScript() {
         return script;
     }
-    
+
     public void setScript(String script) {
         this.script = script;
     }
-    
+
     public boolean isHasException() {
         return hasException;
     }
-    
+
     public void setHasException(boolean hasException) {
         this.hasException = hasException;
     }
-    
+
     public Rule getRule() {
         return rule;
     }

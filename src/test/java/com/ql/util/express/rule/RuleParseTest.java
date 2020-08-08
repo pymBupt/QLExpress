@@ -7,7 +7,7 @@ import org.junit.Test;
  * Created by tianqiao on 16/12/21.
  */
 public class RuleParseTest {
-    
+
     @Test
     public void test() throws Exception {
         ExpressRunner runner = new ExpressRunner();
@@ -15,10 +15,10 @@ public class RuleParseTest {
                 "when inCategory.mainCategory.categoryId == 33\n" +
                 "then add(inItem.features,'topCategoryId',inCategory.mainCategory.categoryId.cast2String());\n" +
                 "when inCategory.mainCategory.categoryId != 33\n" +
-                "then del(inItem.features,'topCategoryId');",runner);
-        
+                "then del(inItem.features,'topCategoryId');", runner);
+
     }
-    
+
     private void parseRule(String s, ExpressRunner runner) throws Exception {
         Rule rule = runner.parseRule(s);
         System.out.println(rule.toSkylight());

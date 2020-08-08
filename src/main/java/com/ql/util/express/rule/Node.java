@@ -11,6 +11,7 @@ public class Node {
     public Integer getNodeId() {
         return nodeId;
     }
+
     public void setNodeId(Integer nodeId) {
         this.nodeId = nodeId;
     }
